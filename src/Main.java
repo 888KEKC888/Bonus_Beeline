@@ -1,21 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-       int Check;                                                               // Объявляете переменные для входных данных и
-       int Payment;                                                             // параметров программы: начального счёта,
-       int Bonus;
+        int check = 211;
+        int payment = 1001;
+        int bonus;
 
-       Check = 211;
-       Payment = 1500;                                                          // суммы пополнения и тп
 
-        if (Payment >= 1000)
-        {                                                                       // Условным оператором проверяете, превысила ли
-            Bonus = Payment / 100 + Payment + Check;                            // сумма пополнения порог, и для этих двух разных
-            System.out.println("Счет пополнен, на счету: " + Bonus + " руб.");  // сценариев рассчитываете сумму бонуса и выводите
+        if (payment > 1000) {
+            bonus = payment / 100 + payment + check;
+            System.out.println("Счет пополнен, на счету: " + bonus + " руб.");
 
-        }else                                                                   // на экран.
-        {
-            Bonus = Check+Payment;
-            System.out.println("Счет пополнен, на счету: " + Bonus + " руб.");
-        }
+        } else {
+            bonus = check + payment;
+            System.out.println("Счет пополнен, на счету: " + bonus + " руб.");
         }
     }
+}
